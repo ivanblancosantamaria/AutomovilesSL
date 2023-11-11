@@ -5,6 +5,16 @@ public class Client {
     private String name;
     private String surname;
     private String secondSurname;
+    private String fullName;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     private String direction;
 
     public String getDni() {
@@ -31,6 +41,7 @@ public class Client {
         this.secondSurname = secondSurname;
     }
 
+
     public String getDirection() {
         return direction;
     }
@@ -55,6 +66,16 @@ public class Client {
         this.name = name;
     }
     public ArrayList<Sales> SalesClient = new ArrayList<>();
+
+    public ArrayList<Sales> getSalesClient() {
+        return SalesClient;
+    }
+
+    public void setSalesClient(ArrayList<Sales> salesClient) {
+        SalesClient = salesClient;
+    }
+
+    public String FullName = name+surname+secondSurname;
 
     public String toString(){
         return "Client{ "+
