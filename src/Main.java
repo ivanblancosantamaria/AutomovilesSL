@@ -96,9 +96,7 @@ public class Main {
 
         }while (intMenu!=0);
 
-        System.out.println(vehicle1.toString());
-        System.out.println(client1.toString());
-        System.out.println(sale1.toString());
+
 
 
 
