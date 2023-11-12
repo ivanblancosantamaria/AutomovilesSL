@@ -65,15 +65,6 @@ public class Client {
     public void setName(String name) {
         this.name = name;
     }
-    public ArrayList<Sales> SalesClient = new ArrayList<>();
-
-    public ArrayList<Sales> getSalesClient() {
-        return SalesClient;
-    }
-
-    public void setSalesClient(ArrayList<Sales> salesClient) {
-        SalesClient = salesClient;
-    }
 
     public String FullName = name+surname+secondSurname;
 
