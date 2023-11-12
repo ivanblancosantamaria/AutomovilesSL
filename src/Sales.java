@@ -1,18 +1,35 @@
 import java.util.Date;
 
 public class Sales {
-    private String codeVehicle;
+    private String vehicleRegistration;
     private Date saleDate;
-    private String costumer;
+    private String costumerDni;
+
+    public String getVehicleRegistration() {
+        return vehicleRegistration;
+    }
+
+    public void setVehicleRegistration(String vehicleRegistration) {
+        this.vehicleRegistration = vehicleRegistration;
+    }
+
+    public Date getSaleDate() {
+        return saleDate;
+    }
+
+    public void setSaleDate(Date saleDate) {
+        this.saleDate = saleDate;
+    }
+
     private String payForm;
     private Double price;
 
-    public String getCodeVehicle() {
-        return codeVehicle;
+    public String getvehicleRegistration() {
+        return vehicleRegistration;
     }
 
-    public void setCodeVehicle(String codeVehicle) {
-        this.codeVehicle = codeVehicle;
+    public void setvehicleRegistration(String vehicleRegistration) {
+        this.vehicleRegistration = vehicleRegistration;
     }
 
     public Date getSaleDAte() {
@@ -23,12 +40,12 @@ public class Sales {
         this.saleDate = saleDAte;
     }
 
-    public String getCostumer() {
-        return costumer;
+    public String getCostumerDni() {
+        return costumerDni;
     }
 
-    public void setCostumer(String costumer) {
-        this.costumer = costumer;
+    public void setCostumerDni(String costumerDni) {
+        this.costumerDni = costumerDni;
     }
 
     public String getPayForm() {
@@ -47,20 +64,12 @@ public class Sales {
         this.price = price;
     }
 
-    public String getVehicle() {
-        return codeVehicle;
-    }
-
-    public void setVehicle(String vehicle) {
-        this.codeVehicle = vehicle;
-    }
-
     public String toString(){
         return "Sales {"+
-                "'codeVehicle='"+ saleDate + "',"+
+                "'codeVehicle='"+ vehicleRegistration + "',"+
                 "'saleDate='"+ saleDate + "',"+
-                "'costumer='"+ costumer + "',"+
-                "'price='"+ price + "',}";
+                "'costumer='"+ costumerDni + "',"+
+                "'price='"+ price + "'}";
 
 
     }

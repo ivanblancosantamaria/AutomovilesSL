@@ -2,6 +2,10 @@ public class Vehicle {
     private String vehicleRegistration;
     private String brand;
     private String model;
+    private String colour;
+    private String fuel;
+    private String engine;
+    private String cv;
 
     public String getModel() {
         return model;
@@ -11,10 +15,6 @@ public class Vehicle {
         this.model = model;
     }
 
-    private String colour;
-    private String fuel;
-    private String engine;
-    private String cv;
 
     public String getColour() {
         return colour;
@@ -71,6 +71,6 @@ public class Vehicle {
                 "colour='" + colour + "'," +
                 "fuel='" + colour + "'," +
                 "engine='" + engine + "'," +
-                "cv='" + cv + "',}";
+                "cv='" + cv + "'}";
     }
 }
